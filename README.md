@@ -2,4 +2,4 @@
 
 Just wanted to make it simple as much as possible in this complicated modern era.
 
-Visit at: ntsmk.vercel.app
+Visit at: https://ntsmk.vercel.app
