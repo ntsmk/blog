@@ -77,6 +77,28 @@ a:hover { opacity: 0.6; }
     border: 1px solid #000;
 }
 
+/* 1. Only underline links that ARE NOT the back-link */
+.post-full-content a:not(.back-link) {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 2. Style for the back-link (No underline) */
+.post-full-content a.back-link {
+    text-decoration: none;
+    border-bottom: none;
+    color: inherit;
+}
+
+/* 3. Hover state for the underlined links */
+.post-full-content a:not(.back-link):hover {
+    color: #666;
+    border-bottom-color: #666;
+}
+
 /* 5. Footer */
 footer {
     margin-top: 8rem;
