@@ -53,9 +53,9 @@
 
                     <p>After installing the OS permanently and creating my username and password, I encountered a much more difficult problem than the Wi-Fi issue. After finishing the setup (username, language selection, timezone, etc.), I ran <code>sudo apt update && sudo apt upgrade</code>. I restarted the computer and it did not load the OS. I was locked out. The real unexpected troubleshooting had begun.</p>
 
-                    <p>It seemed that after updating, the newest kernel was activated, but the compatibility between that kernel and my 2015 MacBook Air was not great, and it struggled to load the OS.</p>
+                    <p>It seemed that after updating, the newest kernel (6.17) was activated, but the compatibility between that kernel and my 2015 MacBook Air was not great, and it struggled to load the OS.</p>
 
-                    <p>To solve this, I had to enter the GRUB menu before the OS loaded. In the menu, I was able to choose a different kernel version. Since the latest kernel version was causing issues, I chose a slightly older one. I was able to successfully load the OS and return to the login screen, which was a relief.</p>
+                    <p>To solve this, I had to enter the GRUB menu before the OS loaded. In the menu, I was able to choose a different kernel version. Since the latest kernel version was causing issues, I chose a slightly older one (6.14). I was able to successfully load the OS and return to the login screen, which was a relief.</p>
 
                     <p>After realizing that this old MacBook Air did not work well with that specific kernel version, I added it to the Update Manager blacklist. I have continued using this Mint machine, running <code>sudo apt update && sudo apt upgrade</code> occasionally, and I have not encountered the same issue since then.</p>
 
