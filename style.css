@@ -117,30 +117,6 @@ a:hover { opacity: 0.6; }
     line-height: 1.6;    /* Makes the text easier to read */
 }
 
-/* For inline code like `uname -r` */
-code {
-    background-color: #1e1e1e; /* Dark grey, not pure black */
-    color: #dcdcdc;            /* Off-white for readability */
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: 'Courier New', monospace;
-}
-
-/* For code blocks (the bigger boxes) */
-pre {
-    background-color: #0d0d0d; /* Very dark black */
-    border: 1px solid #333;    /* Subtle border to define the box */
-    padding: 15px;
-    border-radius: 8px;
-    overflow-x: auto;          /* Allows scrolling if code is long */
-}
-
-pre code {
-    background-color: transparent; /* Remove the inline background */
-    padding: 0;
-    color: #89ddff;            /* A "cool" blue color for the code */
-}
-
 /* 5. Footer */
 footer {
     margin-top: 3rem;
