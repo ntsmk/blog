@@ -104,6 +104,19 @@ a:hover { opacity: 0.6; }
     border-bottom-color: #666;
 }
 
+/* This ensures the list doesn't hug the left wall or the text below it */
+.custom-list {
+    margin-top: 10px;
+    margin-bottom: 20px; /* This creates the "missing space" after the list */
+    padding-left: 25px;  /* Adjust this to align the bullets horizontally */
+    list-style-type: disc;
+}
+
+.custom-list li {
+    margin-bottom: 8px;  /* Adds breathing room between each bullet point */
+    line-height: 1.6;    /* Makes the text easier to read */
+}
+
 /* 5. Footer */
 footer {
     margin-top: 3rem;
