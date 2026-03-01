@@ -21,7 +21,7 @@
 
         <main>
             <article>
-                <span class="post-date">February 23, 2026</span>
+                <span class="post-date">March 1, 2026</span>
                 <h2 class="post-title">Here is how I started using Linux</h2>
                 
                 <div class="post-full-content">
@@ -35,7 +35,7 @@
 
                     <p>The timing was probably right as well. <a href="https://support.microsoft.com/en-us/windows/windows-10-support-has-ended-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281" target="_blank">Microsoft ended Windows 10 support in October 2025</a>. That meant you either upgrade to Windows 11 or switch to a different OS, such as macOS or Linux. But what if you want to stick with Windows and your computer is too old to upgrade to Windows 11?</p> 
 
-                    <p>If you want to stay with Windows, you would need to buy a newer laptop that already has Windows 11, or use a <a href="https://github.com/builtbybel/FlyOOBE" target="_blank">specific tool</a> to force a Windows 11 upgrade on an old laptop (which I actually did on the old free Windows laptop I got from work — it was a good experiment).</p>
+                    <p>If you want to stay with Windows, you would need to buy a newer laptop that already has Windows 11, or use a <a href="https://github.com/builtbybel/FlyOOBE" target="_blank">specific tool</a> to force a Windows 11 upgrade on an old laptop (which I actually did on the old free Windows laptop I got from work, it was a good experiment).</p>
 
                     <p>Besides the old free laptop I got from work, I already had my 2015 MacBook Air. At that point, I could not install the latest macOS anymore because the 2015 model does not meet the latest OS requirements. Unlike the old Windows laptop, which I upgraded to 16GB of RAM, this MacBook Air has soldered RAM, meaning I cannot upgrade it. This MacBook Air will be stuck with 4GB of RAM forever. Even if I forced a new OS onto this MacBook using a specific tool, 4GB of RAM simply cannot handle it.</p>
 
@@ -51,7 +51,7 @@
 
                     <h3>Second Issue During Installation: Newest Kernel Not Loading</h3>
 
-                    <p>After installing the OS permanently and creating my username and password, I encountered a much more difficult problem than the Wi-Fi issue. After finishing the setup (username, language selection, timezone, etc.), I ran <code>sudo apt update && sudo apt upgrade</code>. I restarted the computer — and it did not load the OS. I was locked out. The real unexpected troubleshooting had begun.</p>
+                    <p>After installing the OS permanently and creating my username and password, I encountered a much more difficult problem than the Wi-Fi issue. After finishing the setup (username, language selection, timezone, etc.), I ran <code>sudo apt update && sudo apt upgrade</code>. I restarted the computer and it did not load the OS. I was locked out. The real unexpected troubleshooting had begun.</p>
 
                     <p>It seemed that after updating, the newest kernel was activated, but the compatibility between that kernel and my 2015 MacBook Air was not great, and it struggled to load the OS.</p>
 
@@ -64,22 +64,22 @@
                     <p>Since becoming a Linux desktop user, I have been forcing myself to use only:</p>
 
                     <ul>
-                    <li>Terminal for everything</li>
-                    <li>Firefox for researching and documenting (Notion)</li>
-                    <li>Sublime Text for coding</li>
+                        <li>Terminal for everything</li>
+                        <li>Firefox for researching and documenting (Notion)</li>
+                        <li>Sublime Text for coding</li>
                     </ul>
 
                     <p>That’s it. In the terminal, I installed <code>btop</code>, <code>micro</code>, <code>tmux</code>, etc. I configured <code>tlp</code> and <code>mbpfan</code> to help my MacBook Air hardware last longer. I manually run <code>sudo apt update && sudo apt upgrade</code> for software updates. I barely use the GUI in general. I know the command line is faster, and it is also good practice when using Linux.</p>
 
-                    <p><a href="https://github.com/ntsmk/chatbot-for-internal-member" target="_blank">I even installed Kubernetes (K3s) on this 4GB RAM computer and deployed my app on it</a>. It would be much more hassle to try Kubernetes on Windows, so I took advantage of using Linux as a daily driver. Linux gives you more freedom than Windows because it allows you to configure everything manually in the terminal. At least that is how I feel, and that is exactly why I fell in love with this OS — endless tweaking and experimentation.</p>
+                    <p><a href="https://github.com/ntsmk/chatbot-for-internal-member" target="_blank">I even installed Kubernetes (K3s) on this 4GB RAM computer and deployed my app on it</a>. It would be much more hassle to try Kubernetes on Windows, so I took advantage of using Linux as a daily driver. Linux gives you more freedom than Windows because it allows you to configure everything manually in the terminal. At least that is how I feel, and that is exactly why I fell in love with this OS. Endless tweaking and experimentation.</p>
 
                     <h3>Learning Never Ends</h3>
 
                     <p>After getting used to Mint Xfce for a couple of weeks, one of my coworkers was moving and kindly donated two old laptops to me. I installed:</p>
 
                     <ul>
-                    <li><a href="https://mxlinux.org/" target="_blank">MX Linux</a> on a 2014 laptop with 8GB RAM</li>
-                    <li><a href="https://endeavouros.com/">EndeavourOS</a> on a 2011 MacBook Pro with 8GB RAM</li>
+                        <li><a href="https://mxlinux.org/" target="_blank">MX Linux</a> on a 2014 laptop with 8GB RAM</li>
+                        <li><a href="https://endeavouros.com/">EndeavourOS</a> on a 2011 MacBook Pro with 8GB RAM</li>
                     </ul>
 
                     <p>The reason for MX Linux is that I wanted to stay within the Debian family, which I am already familiar with, but also try a slightly more challenging distro than Mint. I now use MX as my daily driver when coding and writing blog posts since it has 8GB of RAM and is stable.</p>
