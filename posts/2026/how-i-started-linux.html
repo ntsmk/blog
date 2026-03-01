@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How I started using Linux — ntsmk.</title>
-    <meta name="description" content="Here is how I started using Linux and why I love it">
+    <meta name="description" content="Here is how I started using Linux on my personal computers">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -22,20 +22,42 @@
         <main>
             <article>
                 <span class="post-date">February 23, 2026</span>
-                <h2 class="post-title">Here is how I started using Linux and why I love it</h2>
+                <h2 class="post-title">Here is how I started using Linux on my personal computers</h2>
                 
                 <div class="post-full-content">
-                    <p>I have installed Linux Mint Xfce on my old Macbook Air beginning of February, 2026. It was my first time to install different OS on my computer. Also first time to install Linux too. It has been about 3 weeks now. And I fell in love with this OS.</p>
+                    <p>I have installed Linux Mint Xfce on my old Macbook Air beginning of February, 2026. It was my first time to install different OS on my computer. Also, first time to install Linux too. It has been about a month now. And I fell in love with Linux.</p>
 
-                    <h3>How I started it</h3>
+                    <h3>How I started my relationship with Linux</h3>
                     
-                    <p>One day, my friend said: <i>"Linux is faster than Windows. You should try."</i> His word was stuck with me. Before that, I have never used linux on my personal computer. Although, in the past, I have ran Linux on local VM, AWS EC2, and Raspberry Pi as a learning process. Even so, I belive the experience between those and bare mental is completely different.</p> 
+                    <p>One day, my friend said: <i>"Linux is faster than Windows. You should try."</i> His words were stuck with me. Before that, I have never used linux on my personal computer. Although, in the past, I have ran Linux on local VM, AWS EC2, and Raspberry Pi as a learning purpose. But it was more like Linux serve experience. Installing Linux desktop completely on the actual laptop? I felt it is a whole different level.</p> 
 
-                    <p>And shortly after, out of curiosity, I started searching about Linux. I started seeing more articles basically suggesting to switch to Linux from Windows because how Microsoft nowadays operates. Saying Windows computers are full of bloat which makes the computer slower. </p>
+                    <p>And shortly after, out of curiosity, I started searching about Linux more. I started seeing more articles basically suggesting to switch to Linux from Windows because how Microsoft nowadays operates. Saying Windows computers are full of bloat which makes the computer slower, a lot of prvacy concerns from telemetry. <i>"Windows treats you as a product, Linux treats you as an admin" </i> I don't know how many times I saw this quotes. It got me more curious about the OS.</p>
 
-                    <p>Probably the timing was also right. Microsoft ended Windows 10 support on 2025 October. That means you either go upgarade to Windows 11 or go switch to different OS, which is MacOS or Linux. But what if the computer is old enough not to be able to upgrade to Windows 11?</p> 
+                    <p>Probably the timing was also right. <a href="https://support.microsoft.com/en-us/windows/windows-10-support-has-ended-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281" target="_blank">Microsoft ended Windows 10 support on 2025 October</a>. That means you either go upgarade to Windows 11 or go switch to different OS, which is MacOS or Linux. But what if you want to stick with Windows but the computer is old enough not to be able to upgrade to Windows 11?</p> 
                     
-                    <p>If you want to stick with Windows, you will need to go buy newer laptop that has Windows 11 already or use <a href="https://github.com/builtbybel/FlyOOBE">specific tool</a> to force Windows 11 upgrade on the old laptop(Which I acually did on the 2016 Windows laptop)</p>
+                    <p>If you want to stick with Windows, you will need to go buy newer laptop that has Windows 11 already or use <a href="https://github.com/builtbybel/FlyOOBE" target="_blank">specific tool</a> to force Windows 11 upgrade on the old laptop(Which I acually did on the old free Windows laptop I got from work, it was a good experimentation)</p>
+
+                    <p>Besides the old free laptop I got from work, I already had my Macbook Air from 2015. At this moment, I could not install the latest macOS on the computer anymore because simply 2015 model does not meet the latest OS requirements. And unlike the old Windows laptop which I upgraded RAM to 16GB, this macbook air has soldiered RAM, meaning I cannot upgrade RAM, this macbook air RAM will be stuck with 4GB forever. Even if I use specific tool to force to install new OS to this macbook, simply 4GB RAM can't handle it.</p>
+
+                    <p>So on random weekend in February, after transfered my all document data on the mac to USB as a backup, finally I decided to try <a href="https://linuxmint.com/download.php" target="_blank">Mint xfce edition</a> live USB on my 11 years old macbook air.</p>
+
+                    <h3>First issue: Wifi not connecting</h3>
+
+                    <p>It was my first time to try Linux live USB in general. I have done booting up from USB before but it was only for Windows iso file. Before booting up, I already asked Gemini what is going to happen, and I was already aware of the issue I will more likely encouter: wifi connecting issue.</p>
+
+                    <p>It booted up, Mint screen showed up. How it looked was more than polish and modern than I thought. I liked the design. And as I expected, when I clicked the internet connection icon, it was not showing my home wifi SSID. I searched Driver Manager on the seach bar. When I used my smartphone hotspot to get internet for this Mac, the Driver Manager installed Broadcom Wireless drivers, and it started showing my home wifi SSID. I was successfully able to connect to internet while trying live US version.</p>
+
+                    <p>Besides the wifi connection issue, everything seemed fine. Touchpad works. Scrolling websites works. My biggest concern was wifi connection issue. So after sorting out this issue via Driver Manager, I felt releief and finally decided to wipe the storage completely and install the OS.</p>
+
+                    <h3>Second issue: Newest Kernel is not loaded on the computer</h3>
+
+                    <p>After installing the OS permanently, after creating username and password stuff, I encountered much more difficult problem than Wifi conneting issue. Once I finished the username creation, language slection, timezone etc, I also ran <code>sudo apt update && sudo apt upgrade</code>. I restarted the computer. And it did not load the OS. I was locked out, the real troubleshooting has started.</p>
+
+                    <p>It seemed like after updating, the newest kernel kicked in, but the compatibility between this kernel and this 2015 Macbook Air was not great, and it ended up struggling with loading the OS. </p>
+
+                    <p>As a solution for this, first I had to enter the GRUB menu before loading OS. And in the menu, luckily I was able to choose different kernel version. Since the latest kernel version was having an issue to load, so I choose the sightly older version. Was able to successfully load OS, going back to login screen. </p>
+
+                    <p>After knowing the fact this old macbook air does not like this specific </p>
 
                     <p>Thanks for reading.</p>
 
